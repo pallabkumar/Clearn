@@ -1,0 +1,1 @@
+java -Djava.library.path=lib -Xms256m -Xmx1024m -jar target/Cognizant-Learn-1.0-SNAPSHOT-jar-with-dependencies.jar
