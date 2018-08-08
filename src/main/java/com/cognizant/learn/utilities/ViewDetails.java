@@ -34,6 +34,8 @@ public class ViewDetails {
 	public static Font CLEARNF12B = new Font("Calibri", Font.BOLD, 12);
 	public static Font CLEARNF14 = new Font("Calibri", Font.PLAIN, 14);
 	public static Font CLEARNF14B = new Font("Calibri", Font.BOLD, 14);
+	public static Font CLEARNF15 = new Font("Calibri", Font.PLAIN, 15);
+	public static Font CLEARNF15B = new Font("Calibri", Font.BOLD, 15);
 	public static Font CLEARNF16 = new Font("Calibri", Font.PLAIN, 16);
 	public static Font CLEARNF16B = new Font("Calibri", Font.BOLD, 16);
 	public static Font CLEARNF32B = new Font("Calibri", Font.BOLD, 32);

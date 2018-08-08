@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 
 import com.cognizant.learn.utilities.GuiUtility;
 import com.cognizant.learn.utilities.ViewDetails;
+import com.cognizant.learn.view.CLearnClient;
 
 public class PhoenixLifeSetUpContentPage8 extends JPanel {
 		
@@ -32,7 +33,17 @@ public class PhoenixLifeSetUpContentPage8 extends JPanel {
 			headerPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 
 			JLabel headerLabel = new JLabel(" Follow the same steps 1 to 6 for axaefair, axalife. The ear and war files will be created in corresponding local_artifacts folder. ");
+			
 			headerLabel.setFont(ViewDetails.CLEARNF18B);
+			
+			if(CLearnClient.FULL_SCREEN_WIDTH >= 1600) {
+				headerLabel.setFont(ViewDetails.CLEARNF18B);
+			} else if(CLearnClient.FULL_SCREEN_WIDTH >= 1400) {
+				headerLabel.setFont(ViewDetails.CLEARNF16B);
+			} else {
+				headerLabel.setFont(ViewDetails.CLEARNF15B);
+			}
+			
 			headerPanel.add(headerLabel);
 			
 			this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
