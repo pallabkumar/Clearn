@@ -39,7 +39,7 @@ public class CLearnClient extends JFrame {
 
 	public CLearnClient() {
 		
-		//new SplashScreen();
+		new SplashScreen();
 
 		GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
 		
