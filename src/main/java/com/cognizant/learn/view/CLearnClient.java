@@ -39,14 +39,14 @@ public class CLearnClient extends JFrame {
 
 	public CLearnClient() {
 		
-		new SplashScreen();
+		//new SplashScreen();
 
 		GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
 		
-		int FULL_SCREEN_WIDTH = gd.getDisplayMode().getWidth();
-		int FULL_SCREEN_HEIGHT = gd.getDisplayMode().getHeight();
+		FULL_SCREEN_WIDTH = gd.getDisplayMode().getWidth();
+		FULL_SCREEN_HEIGHT = gd.getDisplayMode().getHeight();
 		
-		if(FULL_SCREEN_WIDTH >=1900) {
+		if(FULL_SCREEN_WIDTH >= 1900) {
 			widthOfMonitor = FULL_SCREEN_WIDTH * 75/100;
 			heightOfMonitor = FULL_SCREEN_HEIGHT * 75/100;
 		} else if(FULL_SCREEN_WIDTH >= 1600) {
@@ -65,9 +65,9 @@ public class CLearnClient extends JFrame {
 
 		clearnToolbar = new ClearnToolbar(this, fullScreenWidth);
 		clearnToolbar.setBackground(ViewDetails.CLEARN_FOOTER_COLOR_TWO);
-		clearnToolbar.setPreferredSize(new Dimension(widthOfMonitor, 75));
-		clearnToolbar.setMaximumSize(new Dimension(widthOfMonitor, 75));
-		clearnToolbar.setMinimumSize(new Dimension(widthOfMonitor, 75));
+		clearnToolbar.setPreferredSize(new Dimension(widthOfMonitor, 78));
+		clearnToolbar.setMaximumSize(new Dimension(widthOfMonitor, 78));
+		clearnToolbar.setMinimumSize(new Dimension(widthOfMonitor, 78));
 
 		clearnFooter = new ClearnFooter(this, fullScreenWidth);
 		clearnFooter.setPreferredSize(new Dimension(widthOfMonitor, 50));

@@ -29,6 +29,28 @@
 			<version>1.2.17</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.miglayout/miglayout -->
+		<dependency>
+			<groupId>com.miglayout</groupId>
+			<artifactId>miglayout</artifactId>
+			<version>3.5.5</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.jdesktop.swingx/jxmapviewer2 -->
+		<dependency>
+			<groupId>org.jdesktop.swingx</groupId>
+			<artifactId>jxmapviewer2</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.swinglabs.swingx/swingx-all -->
+		<dependency>
+			<groupId>org.swinglabs.swingx</groupId>
+			<artifactId>swingx-all</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>

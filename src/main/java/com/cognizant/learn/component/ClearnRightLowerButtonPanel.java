@@ -15,8 +15,8 @@ import com.cognizant.learn.content.PhoenixLifeSetUpContentPanel;
 import com.cognizant.learn.utilities.GuiUtility;
 import com.cognizant.learn.utilities.ViewDetails;
 
-public class ClearnRightLowerButtonPanel extends JPanel {
-	
+public class ClearnRightLowerButtonPanel extends JPanel implements CommonFunctionalInterface {
+
 	/**
 	 * 
 	 */
@@ -25,48 +25,48 @@ public class ClearnRightLowerButtonPanel extends JPanel {
 	private ClearnMiddlePanel clearnMiddlePanel;
 	private final JButton nextButton = new JButton(GuiUtility.getImageIcon("/images/forward_arrow.png"));
 	private final JButton prevButton = new JButton(GuiUtility.getImageIcon("/images/back_arrow.png"));
-	
+
 	public ClearnRightLowerButtonPanel(final ClearnMiddlePanel clearnMiddlePanel, int width, int height) {
-		
+
 		this.clearnMiddlePanel = clearnMiddlePanel; 
-		
+
 		this.setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
-		
+
 		checkingAboutContentPageCount();
-		
+
 		JPanel prevButtonPanel = new JPanel();
 		prevButtonPanel.setBackground(ViewDetails.CLEARN_BODY_COLOR_TWO);
 		prevButtonPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 		prevButtonPanel.setPreferredSize(new Dimension(width * 50/100, height));
 		prevButtonPanel.setMaximumSize(new Dimension(width * 50/100, height));
 		prevButtonPanel.setMinimumSize(new Dimension(width * 50/100, height));
-		
+
 		prevButton.setBorder(null);
 		prevButton.setFocusPainted(false);
 		prevButton.setContentAreaFilled(false);
 		prevButton.addActionListener(new ActionListener() {
-			
+
 			public void actionPerformed(ActionEvent e) {
 				if (ClearnMiddlePanel.CONTENT_ID == ContentMenuWiseContentPanelMapper.PHOENIX_LIFE_SETUP_CONTENT_ID) {
 					PhoenixLifeSetUpContentPanel phoenixLifeSetUpContentPanel = clearnMiddlePanel.getPhoenixLifeSetUpContentPanel();
 					int contentIndex = phoenixLifeSetUpContentPanel.getContentIndex();
 					phoenixLifeSetUpContentPanel.setContentIndex(--contentIndex);
-					phoenixLifeSetUpContentPanel.populatePhoenixLifeContentPanelMap();
-					
+					phoenixLifeSetUpContentPanel.populatePhoenixLifeContentPanel();
+
 					nextButton.setEnabled(true);
-					
+
 					if (contentIndex == PhoenixLifeSetUpContentPanel.MAX_CONTENT_PAGE_COUNT) {
 						prevButton.setEnabled(false);
 					} else {
 						prevButton.setEnabled(true);
 					}
-					
+
 				} else if (ClearnMiddlePanel.CONTENT_ID == ContentMenuWiseContentPanelMapper.INTRODUCTION_CONTENT_ID) {
 					IntroductionContentPanel introductionContentPanel = clearnMiddlePanel.getIntroductionContentPanel();
 					int contentIndex = introductionContentPanel.getContentIndex();
-					
+
 					nextButton.setEnabled(true);
-					
+
 					if (contentIndex == IntroductionContentPanel.MAX_CONTENT_PAGE_COUNT) {
 						prevButton.setEnabled(false);
 					} else {
@@ -75,45 +75,45 @@ public class ClearnRightLowerButtonPanel extends JPanel {
 				}
 			}
 		});
-		
+
 		prevButtonPanel.add(prevButton);
 		this.add(prevButtonPanel);
-		
+
 		JPanel nextButtonPanel = new JPanel();
 		nextButtonPanel.setBackground(ViewDetails.CLEARN_BODY_COLOR_TWO);
 		nextButtonPanel.setLayout(new FlowLayout(FlowLayout.RIGHT));
 		nextButtonPanel.setPreferredSize(new Dimension(width * 50/100, height));
 		nextButtonPanel.setMaximumSize(new Dimension(width * 50/100, height));
 		nextButtonPanel.setMinimumSize(new Dimension(width * 50/100, height));
-		
+
 		nextButton.setBorder(null);
 		nextButton.setFocusPainted(false);
 		nextButton.setContentAreaFilled(false);
 		nextButton.addActionListener(new ActionListener() {
-			
+
 			public void actionPerformed(ActionEvent e) {
-				
+
 				if (ClearnMiddlePanel.CONTENT_ID == ContentMenuWiseContentPanelMapper.PHOENIX_LIFE_SETUP_CONTENT_ID) {
 					PhoenixLifeSetUpContentPanel phoenixLifeSetUpContentPanel = clearnMiddlePanel.getPhoenixLifeSetUpContentPanel();
 					int contentIndex = phoenixLifeSetUpContentPanel.getContentIndex();
 					phoenixLifeSetUpContentPanel.setContentIndex(++contentIndex);
-					phoenixLifeSetUpContentPanel.populatePhoenixLifeContentPanelMap();
-					
+					phoenixLifeSetUpContentPanel.populatePhoenixLifeContentPanel();
+
 					prevButton.setEnabled(true);
-					
+
 					if (contentIndex == PhoenixLifeSetUpContentPanel.MAX_CONTENT_PAGE_COUNT) {
 						nextButton.setEnabled(false);
 					} else {
 						nextButton.setEnabled(true);
 					}
-					
+
 				} else if (ClearnMiddlePanel.CONTENT_ID == ContentMenuWiseContentPanelMapper.INTRODUCTION_CONTENT_ID) {
-					
+
 					IntroductionContentPanel introductionContentPanel = clearnMiddlePanel.getIntroductionContentPanel();
 					int contentIndex = introductionContentPanel.getContentIndex();
-					
+
 					prevButton.setEnabled(true);
-					
+
 					if (contentIndex == IntroductionContentPanel.MAX_CONTENT_PAGE_COUNT) {
 						nextButton.setEnabled(false);
 					} else {
@@ -122,10 +122,11 @@ public class ClearnRightLowerButtonPanel extends JPanel {
 				}
 			}
 		});
-		
+
 		nextButtonPanel.add(nextButton);
 		this.add(nextButtonPanel);
-		
+
+		clearnMiddlePanel.setCommonFunctionalInterface(this);
 		this.setBackground(ViewDetails.CLEARN_BODY_COLOR_TWO);
 		this.setPreferredSize(new Dimension(width, height));
 		this.setMaximumSize(new Dimension(width, height));
@@ -136,7 +137,7 @@ public class ClearnRightLowerButtonPanel extends JPanel {
 		if (ClearnMiddlePanel.CONTENT_ID == ContentMenuWiseContentPanelMapper.PHOENIX_LIFE_SETUP_CONTENT_ID) {
 			PhoenixLifeSetUpContentPanel phoenixLifeSetUpContentPanel = clearnMiddlePanel.getPhoenixLifeSetUpContentPanel();
 			int contentIndex = phoenixLifeSetUpContentPanel.getContentIndex();
-			
+
 			if (contentIndex == PhoenixLifeSetUpContentPanel.MAX_CONTENT_PAGE_COUNT) {
 				prevButton.setEnabled(false);
 				nextButton.setEnabled(false);
@@ -144,11 +145,11 @@ public class ClearnRightLowerButtonPanel extends JPanel {
 				prevButton.setEnabled(true);
 				nextButton.setEnabled(true);
 			}
-			
+
 		} else if (ClearnMiddlePanel.CONTENT_ID == ContentMenuWiseContentPanelMapper.INTRODUCTION_CONTENT_ID) {
 			IntroductionContentPanel introductionContentPanel = clearnMiddlePanel.getIntroductionContentPanel();
 			int contentIndex = introductionContentPanel.getContentIndex();
-			
+
 			if (contentIndex == IntroductionContentPanel.MAX_CONTENT_PAGE_COUNT) {
 				prevButton.setEnabled(false);
 				nextButton.setEnabled(false);
@@ -157,7 +158,13 @@ public class ClearnRightLowerButtonPanel extends JPanel {
 				nextButton.setEnabled(true);
 			}
 		}
-		
+
+	}
+
+	@Override
+	public void buttonStatusChange() {
+		prevButton.setEnabled(true);
+		nextButton.setEnabled(true);		
 	}
 
 }

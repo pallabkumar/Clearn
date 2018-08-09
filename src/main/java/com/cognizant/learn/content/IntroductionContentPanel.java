@@ -56,6 +56,7 @@ public class IntroductionContentPanel extends JPanel {
 		contentPanel.setMinimumSize(new Dimension(width, height - 50));
 		
 		JTextArea contenLabel = new JTextArea(ViewDetails.INTRO_STR);
+		contenLabel.setEditable(false);
 		contenLabel.setBackground(ViewDetails.CLEARN_CONTENT_COLOR);
 		contenLabel.setPreferredSize(new Dimension(width - 20, height - 50));
 		contenLabel.setMaximumSize(new Dimension(width - 20, height - 50));
