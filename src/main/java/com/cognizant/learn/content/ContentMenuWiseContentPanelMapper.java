@@ -11,6 +11,7 @@ public class ContentMenuWiseContentPanelMapper {
 	public static final String PHOENIX_LIFE_SUB_MENU_4 = "Deployment of Application";
 	public static final String PHOENIX_LIFE_SUB_MENU_5 = "Login into Lifeportal";
 	public static final String PHOENIX_LIFE_SUB_MENU_6 = "Issues & Fixes";
+	public static final String PHOENIX_LIFE_SUB_MENU_7 = "Discussion";
 
 	public static final int INTRODUCTION_CONTENT_ID = 0;
 	public static final String INTRODUCTION_CONTENT_PANEL_NAME = " Introduction ";
@@ -46,6 +47,7 @@ public class ContentMenuWiseContentPanelMapper {
 		subMenuList.add(PHOENIX_LIFE_SUB_MENU_4);
 		subMenuList.add(PHOENIX_LIFE_SUB_MENU_5);
 		subMenuList.add(PHOENIX_LIFE_SUB_MENU_6);
+		subMenuList.add(PHOENIX_LIFE_SUB_MENU_7);
 
 		contentMenuWiseSubMenuList.put(PHOENIX_LIFE_SETUP_CONTENT_ID, subMenuList);
 	}
@@ -58,8 +60,10 @@ public class ContentMenuWiseContentPanelMapper {
 		phoenixLifeSubmenuWisePageNumberMapping.put(PHOENIX_LIFE_SUB_MENU_4, 11);
 		phoenixLifeSubmenuWisePageNumberMapping.put(PHOENIX_LIFE_SUB_MENU_5, 16);
 		phoenixLifeSubmenuWisePageNumberMapping.put(PHOENIX_LIFE_SUB_MENU_6, 20);
+		phoenixLifeSubmenuWisePageNumberMapping.put(PHOENIX_LIFE_SUB_MENU_7, 26);
 	}
 
+	
 
 	public static final HashMap<Integer, HashMap<String, Integer>> contentIdVSSubmenuPageNumberMapping = new HashMap<Integer, HashMap<String, Integer>>();
 	static {

@@ -69,23 +69,23 @@ public class ViewDetails {
 	public static final String PHOEINX_LIFE_CONTENT_Label32 = "  http://doc.cloveretl.com/documentation/UserGuide/index.jsp?topic=/com.cloveretl.server.docs/docs/troubleshooting.html";
 	
 	
-	public static Font CLEARNF8 = new Font("Berlin Sans FB Demi", Font.PLAIN, 8);
-	public static Font CLEARNF10 = new Font("Berlin Sans FB Demi", Font.PLAIN, 10);
-	public static Font CLEARNF12 = new Font("Berlin Sans FB Demi", Font.PLAIN, 12);
-	public static Font CLEARNF12B = new Font("Berlin Sans FB Demi", Font.BOLD, 12);
-	public static Font CLEARNF14 = new Font("Berlin Sans FB Demi", Font.PLAIN, 14);
-	public static Font CLEARNF14B = new Font("Berlin Sans FB Demi", Font.BOLD, 14);
-	public static Font CLEARNF15 = new Font("Berlin Sans FB Demi", Font.PLAIN, 15);
-	public static Font CLEARNF15B = new Font("Berlin Sans FB Demi", Font.BOLD, 15);
-	public static Font CLEARNF16 = new Font("Berlin Sans FB Demi", Font.PLAIN, 16);
-	public static Font CLEARNF16B = new Font("Berlin Sans FB Demi", Font.BOLD, 16);
-	public static Font CLEARNF32B = new Font("Berlin Sans FB Demi", Font.BOLD, 32);
-	public static Font CLEARNF18 = new Font("Berlin Sans FB Demi", Font.PLAIN, 17);
-	public static Font CLEARNF18B = new Font("Berlin Sans FB Demi", Font.BOLD, 18);
-	public static Font CLEARNF20 = new Font("Berlin Sans FB Demi", Font.PLAIN, 20);
-	public static Font CLEARNF20B = new Font("Berlin Sans FB Demi", Font.BOLD, 20);
-	public static Font CLEARNF25 = new Font("Berlin Sans FB Demi", Font.PLAIN, 25);
-	public static Font CLEARNF25B = new Font("Berlin Sans FB Demi", Font.BOLD, 25);
+	public static Font CLEARNF8 = new Font("Calibri", Font.PLAIN, 8);
+	public static Font CLEARNF10 = new Font("Calibri", Font.PLAIN, 10);
+	public static Font CLEARNF12 = new Font("Calibri", Font.PLAIN, 12);
+	public static Font CLEARNF12B = new Font("Calibri", Font.BOLD, 12);
+	public static Font CLEARNF14 = new Font("Calibri", Font.PLAIN, 14);
+	public static Font CLEARNF14B = new Font("Calibri", Font.BOLD, 14);
+	public static Font CLEARNF15 = new Font("Calibri", Font.PLAIN, 15);
+	public static Font CLEARNF15B = new Font("Calibri", Font.BOLD, 15);
+	public static Font CLEARNF16 = new Font("Calibri", Font.PLAIN, 16);
+	public static Font CLEARNF16B = new Font("Calibri", Font.BOLD, 16);
+	public static Font CLEARNF32B = new Font("Calibri", Font.BOLD, 32);
+	public static Font CLEARNF18 = new Font("Calibri", Font.PLAIN, 17);
+	public static Font CLEARNF18B = new Font("Calibri", Font.BOLD, 18);
+	public static Font CLEARNF20 = new Font("Calibri", Font.PLAIN, 20);
+	public static Font CLEARNF20B = new Font("Calibri", Font.BOLD, 20);
+	public static Font CLEARNF25 = new Font("Calibri", Font.PLAIN, 25);
+	public static Font CLEARNF25B = new Font("Calibri", Font.BOLD, 25);
 
 	public static Color CLEARN_RED = new Color(218,37,28);
 	public static Color CLEARN_GREEN = new Color(133,194,38);

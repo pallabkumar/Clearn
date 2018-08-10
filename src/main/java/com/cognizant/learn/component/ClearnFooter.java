@@ -1,12 +1,15 @@
 package com.cognizant.learn.component;
 
+import com.cognizant.learn.utilities.GuiUtility;
 import com.cognizant.learn.utilities.ViewDetails;
 import com.cognizant.learn.view.CLearnClient;
 
 import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.image.BufferedImage;
 
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
@@ -22,10 +25,19 @@ public class ClearnFooter extends JPanel{
 	private CLearnClient clearnClient;
 	private int fullScreenWidth;
 	public ClearnFooter(CLearnClient clearnClient, int fullScreenWidth) {
-		
+
 		this.clearnClient = clearnClient;
 		this.fullScreenWidth = fullScreenWidth;
 		intGuiComponent();
+	}
+
+	private BufferedImage image = GuiUtility.getBufferedImage("/images/theme.png");
+
+	public void paintComponent(Graphics g){
+		super.paintComponent(g);
+		if(image != null){
+			g.drawImage(image, 0, 0, this);
+		}
 	}
 
 	private void intGuiComponent() {
@@ -47,18 +59,18 @@ public class ClearnFooter extends JPanel{
 		JPanel content = new JPanel();
 		content.setLayout(new BoxLayout(content, BoxLayout.LINE_AXIS));
 		content.setOpaque(false);
-		
+
 		int productlabelwidth=(fullScreenWidth * 50)/100 ;
 
 		JLabel productNameLabel = new JLabel(" @ Cognizant Technology Solution");
-		productNameLabel.setForeground(ViewDetails.CLEARN_BACKGROUND_COLOR);
+		productNameLabel.setForeground(ViewDetails.CLEARN_CONTENT_COLOR);
 		productNameLabel.setFont(ViewDetails.CLEARNF18);
 		productNameLabel.setPreferredSize(new Dimension(productlabelwidth, 50));
 		productNameLabel.setMinimumSize(new Dimension(productlabelwidth, 50));
 		productNameLabel.setMaximumSize(new Dimension(productlabelwidth, 50));
-		
-//		productNameLabel.setBorder(BorderFactory.createLineBorder(Color.red, 2));
-		
+
+		//		productNameLabel.setBorder(BorderFactory.createLineBorder(Color.red, 2));
+
 		this.add(productNameLabel, gbc);
 		gbc.gridx++;
 		this.add(content, gbc);

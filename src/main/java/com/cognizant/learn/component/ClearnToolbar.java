@@ -1,13 +1,24 @@
 package com.cognizant.learn.component;
 
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
 import com.cognizant.learn.utilities.GuiUtility;
 import com.cognizant.learn.utilities.ViewDetails;
 import com.cognizant.learn.view.CLearnClient;
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class ClearnToolbar extends JPanel{
 
@@ -19,6 +30,15 @@ public class ClearnToolbar extends JPanel{
 
 	@SuppressWarnings("unused")
 	private int fullScreenWidth = -1;
+	
+	private BufferedImage image = GuiUtility.getBufferedImage("/images/theme.png");
+	
+    public void paintComponent(Graphics g){
+        super.paintComponent(g);
+        if(image != null){
+            g.drawImage(image, 0, 0, this);
+        }
+    }
 
 	@SuppressWarnings("static-access")
 	public ClearnToolbar(CLearnClient clearnClient, int fullScreenWidth) {
@@ -85,7 +105,7 @@ public class ClearnToolbar extends JPanel{
 
 		JLabel headingLabel = new JLabel("Cognizant Learning Board");
 		headingLabel.setFont(ViewDetails.CLEARNF25B);
-		headingLabel.setForeground(ViewDetails.CLEARN_BLACK);
+		headingLabel.setForeground(ViewDetails.CLEARN_CONTENT_COLOR);
 		middlePanel.add(headingLabel, gbcMiddle);
 
 		decoration.add(middlePanel, gbc);
@@ -97,7 +117,7 @@ public class ClearnToolbar extends JPanel{
 		buttonPanel.setPreferredSize(new Dimension(fullScreenWidth * 5/100, 40));
 		buttonPanel.setMaximumSize(new Dimension(fullScreenWidth * 5/100, 40));
 		buttonPanel.setMinimumSize(new Dimension(fullScreenWidth * 5/100, 40));
-//		middlePanel.setBorder(BorderFactory.createLineBorder(Color.blue));
+		buttonPanel.setOpaque(false);
 
 		JButton close = new JButton(GuiUtility.getImageIcon("/images/close.png"));
 		close.setRolloverIcon(GuiUtility.getImageIcon("/images/close_over.png"));
@@ -116,7 +136,7 @@ public class ClearnToolbar extends JPanel{
 		
 		decoration.add(buttonPanel, gbc);
 
-		this.setBackground(ViewDetails.CLEARN_TOOLBAR_BACKGROUND);
+//		this.setBackground(ViewDetails.CLEARN_TOOLBAR_BACKGROUND);
 		this.setLayout(new GridBagLayout());
 		gbc.gridx = 0;
 		gbc.gridy = 0;

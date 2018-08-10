@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 
 import org.apache.log4j.Logger;
 
+import com.cognizant.learn.content.phoenix.DisscussionFormPage;
 import com.cognizant.learn.content.phoenix.PhoenixLifeSetUpContentPage1;
 import com.cognizant.learn.content.phoenix.PhoenixLifeSetUpContentPage10;
 import com.cognizant.learn.content.phoenix.PhoenixLifeSetUpContentPage11;
@@ -48,7 +49,7 @@ public class PhoenixLifeSetUpContentPanel extends JPanel {
 	
 	private int width, height;
 	private HashMap<Integer, JPanel> indexWiseContentPanelMap;
-	public static final int MAX_CONTENT_PAGE_COUNT = 26;
+	public static final int MAX_CONTENT_PAGE_COUNT = 27;
 	
 	public static Font HEADER_FONT;
 	public static Font CONTENT_FONT;
@@ -89,7 +90,7 @@ public class PhoenixLifeSetUpContentPanel extends JPanel {
 			CONTENT_FONT = ViewDetails.CLEARNF20;
 		} else if(CLearnClient.FULL_SCREEN_WIDTH >= 1600) {
 			HEADER_FONT = ViewDetails.CLEARNF20B;
-			CONTENT_FONT = ViewDetails.CLEARNF18;
+			CONTENT_FONT = ViewDetails.CLEARNF20;
 		} else if(CLearnClient.FULL_SCREEN_WIDTH >= 1400) {
 			HEADER_FONT = ViewDetails.CLEARNF20B;
 			CONTENT_FONT = ViewDetails.CLEARNF18;
@@ -147,6 +148,7 @@ public class PhoenixLifeSetUpContentPanel extends JPanel {
 		indexWiseContentPanelMap.put(23, new PhoenixLifeSetUpContentPage23(width, height));
 		indexWiseContentPanelMap.put(24, new PhoenixLifeSetUpContentPage24(width, height));
 		indexWiseContentPanelMap.put(25, new PhoenixLifeSetUpContentPage25(width, height));
+		indexWiseContentPanelMap.put(26, new DisscussionFormPage(width, height));
 	}
 
 	
