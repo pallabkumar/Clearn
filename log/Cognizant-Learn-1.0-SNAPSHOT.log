@@ -115,3 +115,123 @@
 2018-08-10 11:25:59 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 20
 2018-08-10 11:25:59 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
 2018-08-10 11:25:59 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
+2018-08-10 14:14:27 INFO  [com.cognizant.learn.view.CLearnClient.java:main():114] -  Initializing the application... 
+2018-08-10 14:14:32 INFO  [com.cognizant.learn.view.CLearnClient.java:main():116] -  Shutting down the application... 
+2018-08-10 14:14:33 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:14:36 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:14:36 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:14:37 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:14:38 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:14:39 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:14:39 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:14:39 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:14:39 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:14:41 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
+2018-08-10 14:14:41 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
+2018-08-10 14:18:54 INFO  [com.cognizant.learn.view.CLearnClient.java:main():114] -  Initializing the application... 
+2018-08-10 14:18:57 INFO  [com.cognizant.learn.view.CLearnClient.java:main():116] -  Shutting down the application... 
+2018-08-10 14:18:58 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:18:59 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:18:59 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:18:59 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:18:59 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:18:59 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:18:59 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:18:59 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:19:00 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:19:00 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:19:00 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:19:00 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:19:01 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
+2018-08-10 14:19:43 INFO  [com.cognizant.learn.view.CLearnClient.java:main():114] -  Initializing the application... 
+2018-08-10 14:19:46 INFO  [com.cognizant.learn.view.CLearnClient.java:main():116] -  Shutting down the application... 
+2018-08-10 14:19:48 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:19:49 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:19:49 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:19:49 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:19:50 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
+2018-08-10 14:20:59 INFO  [com.cognizant.learn.view.CLearnClient.java:main():114] -  Initializing the application... 
+2018-08-10 14:21:02 INFO  [com.cognizant.learn.view.CLearnClient.java:main():116] -  Shutting down the application... 
+2018-08-10 14:21:03 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:21:04 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:21:04 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:21:04 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:21:04 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:21:04 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:21:04 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:21:04 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:21:05 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:21:05 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:21:05 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:21:05 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:21:07 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
+2018-08-10 14:21:54 INFO  [com.cognizant.learn.view.CLearnClient.java:main():114] -  Initializing the application... 
+2018-08-10 14:21:57 INFO  [com.cognizant.learn.view.CLearnClient.java:main():116] -  Shutting down the application... 
+2018-08-10 14:21:59 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:22:00 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:22:00 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:22:00 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:22:00 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:22:00 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:22:01 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
+2018-08-10 14:22:32 INFO  [com.cognizant.learn.view.CLearnClient.java:main():114] -  Initializing the application... 
+2018-08-10 14:22:35 INFO  [com.cognizant.learn.view.CLearnClient.java:main():116] -  Shutting down the application... 
+2018-08-10 14:22:37 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:22:37 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:22:37 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:22:37 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:22:37 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:22:38 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:22:38 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
+2018-08-10 14:23:20 INFO  [com.cognizant.learn.view.CLearnClient.java:main():114] -  Initializing the application... 
+2018-08-10 14:23:23 INFO  [com.cognizant.learn.view.CLearnClient.java:main():116] -  Shutting down the application... 
+2018-08-10 14:23:24 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:25 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:25 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:25 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:25 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:25 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:25 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:25 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:26 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:26 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:26 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:27 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:27 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:27 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:27 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
+2018-08-10 14:23:47 INFO  [com.cognizant.learn.view.CLearnClient.java:main():114] -  Initializing the application... 
+2018-08-10 14:23:50 INFO  [com.cognizant.learn.view.CLearnClient.java:main():116] -  Shutting down the application... 
+2018-08-10 14:23:51 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:52 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:52 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:52 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:52 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:52 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:52 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:52 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:54 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:54 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:54 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:23:54 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:23:55 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26
+2018-08-10 14:28:11 INFO  [com.cognizant.learn.view.CLearnClient.java:main():114] -  Initializing the application... 
+2018-08-10 14:28:14 INFO  [com.cognizant.learn.view.CLearnClient.java:main():116] -  Shutting down the application... 
+2018-08-10 14:28:17 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:28:17 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:28:17 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:28:17 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:28:17 INFO  [com.cognizant.learn.view.CLearnClient.java:createPhoenixLifeContentMap():123] -  createPhoenixLifeContentMap is called for the first time..
+2018-08-10 14:28:18 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 1
+2018-08-10 14:28:19 INFO  [com.cognizant.learn.view.CLearnClient.java:populatePhoenixLifeContentPanel():105] -  populatePhoenixLifeContentPanel is : contentIndex 26

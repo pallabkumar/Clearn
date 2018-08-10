@@ -68,14 +68,24 @@ public class DisscussionFormPage extends JPanel {
 		this.add(headerPanel);
 
 		JPanel contentPanel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
-		contentPanel1.setPreferredSize(new Dimension(width, 50));
-		contentPanel1.setMaximumSize(new Dimension(width, 50));
-		contentPanel1.setMinimumSize(new Dimension(width, 50));
+		contentPanel1.setPreferredSize(new Dimension(width, 35));
+		contentPanel1.setMaximumSize(new Dimension(width, 35));
+		contentPanel1.setMinimumSize(new Dimension(width, 35));
 		contentPanel1.setBackground(ViewDetails.CLEARN_CONTENT_COLOR);
-		JLabel contentLabel1 = new JLabel(" If you have any suggestion for us, we’d love to hear it - ");
+		JLabel contentLabel1 = new JLabel(" If you still have any question / confusion regarding this course,");
 		contentLabel1.setFont(PhoenixLifeSetUpContentPanel.CONTENT_FONT);
 		contentPanel1.add(contentLabel1);
 		this.add(contentPanel1);
+		
+		JPanel contentPanel2 = new JPanel(new FlowLayout(FlowLayout.LEFT));
+		contentPanel2.setPreferredSize(new Dimension(width, 35));
+		contentPanel2.setMaximumSize(new Dimension(width, 35));
+		contentPanel2.setMinimumSize(new Dimension(width, 35));
+		contentPanel2.setBackground(ViewDetails.CLEARN_CONTENT_COLOR);
+		JLabel contentLabel2 = new JLabel(" Please feel free to reach us with your questions and appropriate attachments ");
+		contentLabel2.setFont(PhoenixLifeSetUpContentPanel.CONTENT_FONT);
+		contentPanel2.add(contentLabel2);
+		this.add(contentPanel2);
 
 		JPanel nameLabelPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
 		nameLabelPanel.setBackground(ViewDetails.CLEARN_CONTENT_COLOR);
@@ -162,7 +172,7 @@ public class DisscussionFormPage extends JPanel {
 
 		JPanel attachmentLabelPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
 		attachmentLabelPanel.setBackground(ViewDetails.CLEARN_CONTENT_COLOR);
-		JLabel attachmentLabel = new JLabel(" Attachments ");
+		JLabel attachmentLabel = new JLabel("   Attachments ");
 		attachmentLabel.setFont(ViewDetails.CLEARNF16B);
 		attachmentLabelPanel.add(attachmentLabel);
 		this.add(attachmentLabelPanel);
