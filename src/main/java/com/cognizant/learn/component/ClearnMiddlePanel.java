@@ -34,14 +34,14 @@ import com.cognizant.learn.utilities.GuiUtility;
 import com.cognizant.learn.utilities.ViewDetails;
 import com.cognizant.learn.view.CLearnClient;
 
-public class ClearnMiddlePanel extends JPanel implements CommonFunctionalInterface {
+public class ClearnMiddlePanel extends JPanel {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -2259007765437794654L;
 
-	public static int CONTENT_ID = ContentMenuWiseContentPanelMapper.INTRODUCTION_CONTENT_ID; 
+	public static int CONTENT_ID = ContentMenuWiseContentPanelMapper.PHOENIX_LIFE_SETUP_CONTENT_ID; 
 
 
 	private JPanel leftSideTableOfContentScrollPanel;
@@ -53,9 +53,10 @@ public class ClearnMiddlePanel extends JPanel implements CommonFunctionalInterfa
 	private DefaultMutableTreeNode contentMenuRoot;
 	private JScrollPane contentMenuTreePane;
 	private CommonFunctionalInterface commonFunctionalInterface;
+	private InterPanelCommInterface interPanelCommInterface;
 	
-	public void setCommonFunctionalInterface(CommonFunctionalInterface commonFunctionalInterface) {
-		this.commonFunctionalInterface = commonFunctionalInterface;
+	public void setInterPanelCommInterface(InterPanelCommInterface interPanelCommInterface) {
+		this.interPanelCommInterface = interPanelCommInterface;
 	}
 
 	public IntroductionContentPanel getIntroductionContentPanel() {
@@ -68,8 +69,9 @@ public class ClearnMiddlePanel extends JPanel implements CommonFunctionalInterfa
 
 	private JPanel rightSideTableOfContentPanel;
 
-	public ClearnMiddlePanel(int width, int height) {
+	public ClearnMiddlePanel(CommonFunctionalInterface commonFunctionalInterface, int width, int height) {
 
+		this.commonFunctionalInterface = commonFunctionalInterface;
 		this.width = width;
 		this.height = height;
 
@@ -153,8 +155,8 @@ public class ClearnMiddlePanel extends JPanel implements CommonFunctionalInterfa
 								phoenixLifeSetUpContentPanel.setContentIndex(contentIndex);
 								phoenixLifeSetUpContentPanel.populatePhoenixLifeContentPanel();
 								
-								if (commonFunctionalInterface != null) {
-									commonFunctionalInterface.buttonStatusChange();
+								if (interPanelCommInterface != null) {
+									interPanelCommInterface.buttonStatusChange();
 								}
 							}
 						}
@@ -300,6 +302,7 @@ public class ClearnMiddlePanel extends JPanel implements CommonFunctionalInterfa
 			rightSideTableOfContentPanel.add(introductionContentPanel);
 		} else if (CONTENT_ID == ContentMenuWiseContentPanelMapper.PHOENIX_LIFE_SETUP_CONTENT_ID) {
 			phoenixLifeSetUpContentPanel = new PhoenixLifeSetUpContentPanel(contentPanelWidth, contentPanelheight);
+			phoenixLifeSetUpContentPanel.setCommonFunctionalInterface(commonFunctionalInterface);
 			rightSideTableOfContentPanel.add(phoenixLifeSetUpContentPanel);
 		}
 
@@ -343,8 +346,4 @@ public class ClearnMiddlePanel extends JPanel implements CommonFunctionalInterfa
 			contentMenuRoot.add(contentMenuNode);
 		}
 	}
-
-	@Override
-	public void buttonStatusChange() {}
-
 }

@@ -16,12 +16,13 @@ import org.apache.log4j.Logger;
 import com.cognizant.learn.component.ClearnFooter;
 import com.cognizant.learn.component.ClearnMiddlePanel;
 import com.cognizant.learn.component.ClearnToolbar;
+import com.cognizant.learn.component.CommonFunctionalInterface;
 import com.cognizant.learn.utilities.GuiUtility;
 import com.cognizant.learn.utilities.ViewDetails;
 
 
 
-public class CLearnClient extends JFrame {
+public class CLearnClient extends JFrame implements CommonFunctionalInterface {
 
 	/**
 	 * 
@@ -69,7 +70,7 @@ public class CLearnClient extends JFrame {
 		clearnToolbar.setMaximumSize(new Dimension(widthOfMonitor, 78));
 		clearnToolbar.setMinimumSize(new Dimension(widthOfMonitor, 78));
 
-		clearnFooter = new ClearnFooter(this, fullScreenWidth);
+		clearnFooter = new ClearnFooter(fullScreenWidth);
 		clearnFooter.setPreferredSize(new Dimension(widthOfMonitor, 50));
 		clearnFooter.setMaximumSize(new Dimension(widthOfMonitor, 50));
 		clearnFooter.setMinimumSize(new Dimension(widthOfMonitor, 50));
@@ -80,7 +81,7 @@ public class CLearnClient extends JFrame {
 
 		mainPanel.add(clearnToolbar);
 
-		clearMiddlePanel = new ClearnMiddlePanel(widthOfMonitor, fullScreenHeight - 100);
+		clearMiddlePanel = new ClearnMiddlePanel(this, widthOfMonitor, fullScreenHeight - 100);
 		clearMiddlePanel.setBackground(ViewDetails.CLEARN_BODY_COLOR_TWO);
 
 		mainPanel.add(clearMiddlePanel);
@@ -118,6 +119,16 @@ public class CLearnClient extends JFrame {
 
 	public void windowClosingAction() {
 		System.exit(0);
+	}
+
+	@Override
+	public void windowClose() {
+		this.dispose();
+	}
+
+	@Override
+	public void changeVisibility(boolean isVisible) {
+		this.setVisible(isVisible);		
 	}
 
 }

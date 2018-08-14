@@ -1,0 +1,11 @@
+<project default="copy-resources">
+  <target name="init"/>
+  <target name="copy-resources" depends="init">
+    <copy todir="target/classes/images" filtering="false">
+      <fileset dir="src/main/resources/images" includes="**/*.png|**/*.jpg|**/*.ico|**/*.gif" excludes="**/*.java"/>
+    </copy>
+    <copy todir="target/classes/phoenix_life_setup" filtering="false">
+      <fileset dir="src/main/resources/phoenix_life_setup" includes="**/*.png|**/*.jpg|**/*.ico|**/*.gif" excludes="**/*.java"/>
+    </copy>
+  </target>
+</project>

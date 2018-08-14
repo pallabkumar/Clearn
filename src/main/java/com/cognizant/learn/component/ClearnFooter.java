@@ -1,9 +1,5 @@
 package com.cognizant.learn.component;
 
-import com.cognizant.learn.utilities.GuiUtility;
-import com.cognizant.learn.utilities.ViewDetails;
-import com.cognizant.learn.view.CLearnClient;
-
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.GridBagConstraints;
@@ -15,6 +11,9 @@ import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import com.cognizant.learn.utilities.GuiUtility;
+import com.cognizant.learn.utilities.ViewDetails;
+
 public class ClearnFooter extends JPanel{
 
 	/**
@@ -22,11 +21,9 @@ public class ClearnFooter extends JPanel{
 	 */
 	private static final long serialVersionUID = -738027333997395787L;
 	@SuppressWarnings("unused")
-	private CLearnClient clearnClient;
 	private int fullScreenWidth;
-	public ClearnFooter(CLearnClient clearnClient, int fullScreenWidth) {
+	public ClearnFooter(int fullScreenWidth) {
 
-		this.clearnClient = clearnClient;
 		this.fullScreenWidth = fullScreenWidth;
 		intGuiComponent();
 	}

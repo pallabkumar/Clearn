@@ -1,6 +1,5 @@
 package com.cognizant.learn.component;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Graphics;
@@ -11,7 +10,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -20,14 +18,15 @@ import com.cognizant.learn.utilities.GuiUtility;
 import com.cognizant.learn.utilities.ViewDetails;
 import com.cognizant.learn.view.CLearnClient;
 
-public class ClearnToolbar extends JPanel{
+public class ClearnToolbar extends JPanel {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -7824332186102221655L;
-	private static CLearnClient clearnClient = null;
-
+	
+	private CommonFunctionalInterface commonFunctionalInterface; 
+	
 	@SuppressWarnings("unused")
 	private int fullScreenWidth = -1;
 	
@@ -40,9 +39,8 @@ public class ClearnToolbar extends JPanel{
         }
     }
 
-	@SuppressWarnings("static-access")
-	public ClearnToolbar(CLearnClient clearnClient, int fullScreenWidth) {
-		this.clearnClient = clearnClient;
+	public ClearnToolbar(CommonFunctionalInterface commonFunctionalInterface, int fullScreenWidth) {
+		this.commonFunctionalInterface = commonFunctionalInterface;
 		this.fullScreenWidth = fullScreenWidth;
 
 		JPanel decoration = new JPanel(true);
@@ -145,8 +143,6 @@ public class ClearnToolbar extends JPanel{
 	}
 	
 	protected void closeAction() {
-		clearnClient.windowClosingAction();
+		commonFunctionalInterface.windowClose();
 	}
-
-	public static void main(String[] args) {}
 }

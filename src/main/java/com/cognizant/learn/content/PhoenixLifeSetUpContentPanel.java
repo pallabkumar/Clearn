@@ -1,14 +1,17 @@
 package com.cognizant.learn.content;
 
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.util.HashMap;
 
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 
 import org.apache.log4j.Logger;
 
+import com.cognizant.learn.component.CommonFunctionalInterface;
 import com.cognizant.learn.content.phoenix.DisscussionFormPage;
 import com.cognizant.learn.content.phoenix.PhoenixLifeSetUpContentPage1;
 import com.cognizant.learn.content.phoenix.PhoenixLifeSetUpContentPage10;
@@ -35,6 +38,7 @@ import com.cognizant.learn.content.phoenix.PhoenixLifeSetUpContentPage6;
 import com.cognizant.learn.content.phoenix.PhoenixLifeSetUpContentPage7;
 import com.cognizant.learn.content.phoenix.PhoenixLifeSetUpContentPage8;
 import com.cognizant.learn.content.phoenix.PhoenixLifeSetUpContentPage9;
+import com.cognizant.learn.content.phoenix.PhoenixLifeVideoFrame;
 import com.cognizant.learn.utilities.ViewDetails;
 import com.cognizant.learn.view.CLearnClient;
 
@@ -48,12 +52,13 @@ public class PhoenixLifeSetUpContentPanel extends JPanel {
 	private final static Logger LOG = Logger.getLogger(CLearnClient.class);
 	
 	private int width, height;
-	private HashMap<Integer, JPanel> indexWiseContentPanelMap;
+	private HashMap<Integer, Component> indexWiseContentPanelMap;
 	public static final int MAX_CONTENT_PAGE_COUNT = 27;
 	
 	public static Font HEADER_FONT;
 	public static Font CONTENT_FONT;
 	
+	private int lastContentIndex;
 	private int contentIndex = 1;
 	
 	public int getContentIndex() {
@@ -64,6 +69,12 @@ public class PhoenixLifeSetUpContentPanel extends JPanel {
 		this.contentIndex = contentIndex;
 	}
 	
+	private CommonFunctionalInterface commonFunctionalInterface;
+	
+	public void setCommonFunctionalInterface(CommonFunctionalInterface commonFunctionalInterface) {
+		this.commonFunctionalInterface = commonFunctionalInterface;
+	}
+
 	public PhoenixLifeSetUpContentPanel(int width, int height) {
 
 		this.width = width;
@@ -103,7 +114,20 @@ public class PhoenixLifeSetUpContentPanel extends JPanel {
 	public void populatePhoenixLifeContentPanel() {
 		
 		LOG.info(" populatePhoenixLifeContentPanel is : contentIndex " + contentIndex);
+		
+		if (contentIndex == ContentMenuWiseContentPanelMapper.VIDEO_INDEX) {
+			SwingUtilities.invokeLater(new Runnable() {
+				@Override
+				public void run() {
+					commonFunctionalInterface.changeVisibility(false);
+					new PhoenixLifeVideoFrame(commonFunctionalInterface);
+					contentIndex = lastContentIndex;
+				}
+			});
+			return;
+		}
 
+		lastContentIndex = contentIndex;
 		if (indexWiseContentPanelMap.containsKey(contentIndex)) {
 
 			this.removeAll();
@@ -122,7 +146,7 @@ public class PhoenixLifeSetUpContentPanel extends JPanel {
 		
 		LOG.info(" createPhoenixLifeContentMap is called for the first time..");
 		
-		indexWiseContentPanelMap = new HashMap<Integer, JPanel>();
+		indexWiseContentPanelMap = new HashMap<Integer, Component>();
 		indexWiseContentPanelMap.put(1, new PhoenixLifeSetUpContentPage1(width, height));
 		indexWiseContentPanelMap.put(2, new PhoenixLifeSetUpContentPage2(width, height));
 		indexWiseContentPanelMap.put(3, new PhoenixLifeSetUpContentPage3(width, height));

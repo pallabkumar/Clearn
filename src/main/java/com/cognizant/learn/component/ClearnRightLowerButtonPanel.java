@@ -15,7 +15,7 @@ import com.cognizant.learn.content.PhoenixLifeSetUpContentPanel;
 import com.cognizant.learn.utilities.GuiUtility;
 import com.cognizant.learn.utilities.ViewDetails;
 
-public class ClearnRightLowerButtonPanel extends JPanel implements CommonFunctionalInterface {
+public class ClearnRightLowerButtonPanel extends JPanel implements InterPanelCommInterface {
 
 	/**
 	 * 
@@ -126,7 +126,7 @@ public class ClearnRightLowerButtonPanel extends JPanel implements CommonFunctio
 		nextButtonPanel.add(nextButton);
 		this.add(nextButtonPanel);
 
-		clearnMiddlePanel.setCommonFunctionalInterface(this);
+		clearnMiddlePanel.setInterPanelCommInterface(this);
 		this.setBackground(ViewDetails.CLEARN_BODY_COLOR_TWO);
 		this.setPreferredSize(new Dimension(width, height));
 		this.setMaximumSize(new Dimension(width, height));
@@ -160,11 +160,10 @@ public class ClearnRightLowerButtonPanel extends JPanel implements CommonFunctio
 		}
 
 	}
-
+	
 	@Override
 	public void buttonStatusChange() {
 		prevButton.setEnabled(true);
 		nextButton.setEnabled(true);		
 	}
-
 }

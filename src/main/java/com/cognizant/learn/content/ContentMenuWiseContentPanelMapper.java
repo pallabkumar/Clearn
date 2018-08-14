@@ -5,6 +5,8 @@ import java.util.HashMap;
 
 public class ContentMenuWiseContentPanelMapper {
 
+	public static final int VIDEO_INDEX = Integer.MIN_VALUE;
+	
 	public static final String PHOENIX_LIFE_SUB_MENU_1 = "Setup Local Codebase";
 	public static final String PHOENIX_LIFE_SUB_MENU_2 = "Build Your Project";
 	public static final String PHOENIX_LIFE_SUB_MENU_3 = "Starting Weblogic Server";
@@ -12,6 +14,7 @@ public class ContentMenuWiseContentPanelMapper {
 	public static final String PHOENIX_LIFE_SUB_MENU_5 = "Login into Lifeportal";
 	public static final String PHOENIX_LIFE_SUB_MENU_6 = "Issues & Fixes";
 	public static final String PHOENIX_LIFE_SUB_MENU_7 = "Discussion";
+	public static final String PHOENIX_LIFE_SUB_MENU_8 = "Video Presentation";
 
 	public static final int INTRODUCTION_CONTENT_ID = 0;
 	public static final String INTRODUCTION_CONTENT_PANEL_NAME = " Introduction ";
@@ -48,6 +51,7 @@ public class ContentMenuWiseContentPanelMapper {
 		subMenuList.add(PHOENIX_LIFE_SUB_MENU_5);
 		subMenuList.add(PHOENIX_LIFE_SUB_MENU_6);
 		subMenuList.add(PHOENIX_LIFE_SUB_MENU_7);
+		subMenuList.add(PHOENIX_LIFE_SUB_MENU_8);
 
 		contentMenuWiseSubMenuList.put(PHOENIX_LIFE_SETUP_CONTENT_ID, subMenuList);
 	}
@@ -61,6 +65,7 @@ public class ContentMenuWiseContentPanelMapper {
 		phoenixLifeSubmenuWisePageNumberMapping.put(PHOENIX_LIFE_SUB_MENU_5, 16);
 		phoenixLifeSubmenuWisePageNumberMapping.put(PHOENIX_LIFE_SUB_MENU_6, 20);
 		phoenixLifeSubmenuWisePageNumberMapping.put(PHOENIX_LIFE_SUB_MENU_7, 26);
+		phoenixLifeSubmenuWisePageNumberMapping.put(PHOENIX_LIFE_SUB_MENU_8, VIDEO_INDEX);
 	}
 
 	

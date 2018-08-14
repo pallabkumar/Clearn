@@ -2,6 +2,7 @@ package com.cognizant.learn.component;
 
 public interface CommonFunctionalInterface {
 	
-	void buttonStatusChange();
-
+	void windowClose();
+	void changeVisibility(boolean isVisible);
+	
 }
